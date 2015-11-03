@@ -18,7 +18,7 @@ repository as to not clutter the blog posts with similar edits, typos, or
 drafting commits.
 
 Let me know if you have any questions -
-[@jakeryoung](https://twitter.com/jakeryoung).
+[@jryio](https://twitter.com/jryio).
 
 ### Adding blog posts as a submodule
 
