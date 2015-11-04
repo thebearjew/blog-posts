@@ -1,10 +1,7 @@
 ---
 layout: post
-title: The Start of Something New
+title: Test Post Please Ignore
 date: 2015-03-17 15:00
-description: Starting my own blog - How I learned to love writing everyday
-categories: Personal
-author: Jacob Young
 published: true
 ---
 

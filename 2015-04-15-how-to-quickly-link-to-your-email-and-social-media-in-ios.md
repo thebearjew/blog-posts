@@ -1,10 +1,7 @@
 ---
 layout: post
-title: How to Quickly Link to your Email and Social Media in iOS
-description: "Saving time by using iOS text shortcuts to link to email, social media accounts, and everything else"
+title: Quickly Link to Social Media in iOS
 date: 2015-04-15 00:08:52
-author: Jacob Young
-categories: Tech
 published: true
 ---
 

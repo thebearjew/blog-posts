@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Attending a Talk on Natural Language Processing by John DeNero
-description: "How computers understand and translate human language and the code that does it"
+title: Natural Language Processing Fundamentals with John DeNero
 date: 2015-04-06 16:10:14
-author: Jacob Young
-categories: Programming
 published: true
 ---
 
 ![The Talk]({{ "nlp-denero-1.jpg" | prepend: site.images_path }})
 
 All of us have done something like this: *Google Translate* > *"Hello"* > *Translate to Dutch* > *Paste*, but give little thought to what process is doing all of the work.
+<!-- more -->
 
 Many of our initial assumptions about Human-Computer Interactions are naive. A young child might explain this process as "*someone must have entered the dictionary into a computer and that's how we get translations*". While true, there are far more steps required in order to accurate decompose then interpret sentences.
 
