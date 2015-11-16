@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Natural Language Processing Fundamentals with John DeNero
+title: Natural Language Processing Fundamentals with Prof. John DeNero
 date: 2015-04-06 16:10:14
 published: true
 ---
