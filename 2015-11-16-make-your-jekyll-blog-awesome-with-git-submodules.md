@@ -38,7 +38,7 @@ To start using a Git submodule with a Jekyll sit you first need to make a new Re
 
 The only requirement for this repository is that it follow the  [Jekyll post naming convetion](http://jekyllrb.com/docs/posts/): YYYY-MM-DD-title-of-post.md so it can be rendered properly once we add it as a submodule to the main site.
 
-> Make sure you’ve deleted the existing _posts/ directory originally created by Jekyll.
+Make sure you’ve deleted the existing _posts/ directory originally created by Jekyll.
 
 Lets add the blog-posts repository and simultaneously rename it to Jekyll’s native directory: _posts. 
 
