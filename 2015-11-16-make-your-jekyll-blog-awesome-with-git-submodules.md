@@ -5,7 +5,7 @@ date: 2015-11-16 16:31:47
 published: true
 ---
 
-More and more people are opting for [Static Site Engines](), like [Jekyll](), for their simplicity and functionality. Jekyll allows you to turn already great Markdown into fully functioning  web pages with Liquid Tempting, SASS, and Plugins. Who doesn’t love that?
+More and more people are opting for [Static Site Engines](https://www.staticgen.com), like [Jekyll](), for their simplicity and functionality. Jekyll allows you to turn already great Markdown into fully functioning  web pages with Liquid Tempting, SASS, and Plugins. Who doesn’t love that?
 
 One thing you shouldn’t love is a shitty commit history littered with posts, CSS/SASS updates, and layout modifications. About 80% of all developer sites built with Jekyll have a commit history which looks like this: 
 
@@ -89,7 +89,7 @@ This is great because we can make 10 commits to our blog-posts repository, and i
 To add the pre-push hook, navigate into Git’s hooks directory
 `cd ./git/hooks` and create a new pre-push file `vim pre-push` and add the following lines 
 
-{% gist thebearjew/b2736e7394852ad3dd80 pre-push %}
+{% gist thebearjew/b2736e7394852ad3dd80 pre-push.sh %}
 
 Now when we preform any `git push` to our site, our _posts/ submodule gets updated - then look over the new updates to your posts and push the changes.
 
