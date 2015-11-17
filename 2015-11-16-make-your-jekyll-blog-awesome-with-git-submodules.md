@@ -16,13 +16,11 @@ One thing you shouldn’t love is a shitty commit history littered with posts, C
 This is acceptable for most people because *who is the hell is going to look at the source code to your website*?!
 
 ### Why you should care
-With all things, following good practice, enforcing standards, and adapting to new specifications are fundamental to being a developer. So sticking with those standards whether or not you’re getting paid, makes you a better overall programmer.
+**Best Practice**: With all things, following good practice, enforcing standards, and adapting to new specifications are fundamental to being a developer. So sticking with those standards whether or not you’re getting paid, makes you a better overall programmer. You wouldn't write a library and an application in the same repository, so why do it with a blog?
 
-Additionally, when writing a post, story, or book, it helps to have a clear working space: be it a notebook or a computer. Interspersing your writing and developing on a personal blog makes for a messy workflow.
+**Simplicity**: Additionally, when writing a post, story, or book, it helps to have a clear working space: be it a notebook or a computer. Interspersing your writing and developing on a personal blog makes for a messy workflow. Normally draftinging, editing, and revising is done long before writing is published, lets follow the same workflow with our blogs.
 
-**Modularization**: If you’ve ever used Node.js you’ll know how awesome modules can make your life - heck any well-written library in any language makes developing a breeze. Why not take the same approach to your writing? 
-
-Keeping your writing separate from your HTML/CSS allows you to “hot swap” the theme or structure of your Jekyll site any any time and doesn’t require checking out old commits to copy-paste old posts.
+**Modularization**: If you’ve ever used Node.js you’ll know how awesome modules can make your life - heck any well-written library in any language makes developing a breeze. Why not take the same approach to your writing? Keeping your writing separate from your HTML/CSS allows you to “hot swap” the theme or structure of your Jekyll site any any time and doesn’t require checking out old commits to copy-paste old posts.
 
 ###  The Git submodule
 Besides branches, commit histories, checkouts, and rebases - Git  allows for **repositories inside other repositories** called [Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules).
