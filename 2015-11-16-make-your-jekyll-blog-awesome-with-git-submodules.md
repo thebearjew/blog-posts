@@ -34,7 +34,7 @@ When using a submodule, we can `cd` into the directory and preform Git actions l
 ### Creating a blog posts submodule
 To start using a Git submodule with a Jekyll sit you first need to make a new Repository on Github and populate it with your posts.
 
-![]({{ "blog-posts-submodule.png" | site.images_path }})
+![]({{ "blog-posts-submodule.png" | prepend: site.images_path }})
 
 The only requirement for this repository is that it follow the  [Jekyll post naming convetion](http://jekyllrb.com/docs/posts/): YYYY-MM-DD-title-of-post.md so it can be rendered properly once we add it as a submodule to the main site.
 
