@@ -2,7 +2,7 @@
 layout: post
 title: Quickly Link to Social Media in iOS
 date: 2015-04-15 00:08:52
-published: true
+published: false
 ---
 
 Not very long ago I discovered a simple and amazing shortcut for iOS from reddit. A text shortcut where "@@" would replace my primary email address anywhere I entered it in my phone. I added this text shortcut by going to *Settings* > *General* > *Keyboard* > *Shortcuts* then entering my email as the "phrase" and *@@* as the "shortcut".
