@@ -9,7 +9,7 @@ More and more people are opting for [Static Site Engines](), like [Jekyll](), fo
 
 One thing you shouldn’t love is a shitty commit history littered with posts, CSS/SASS updates, and layout modifications. About 80% of all developer sites built with Jekyll have a commit history which looks like this: 
 
-![](/Users/CASE/Pictures/jekyll-commits.png)
+![]({{ "jekyll-commits.png" | prepend: site.images_path }})
 
 <small> Not trying to pick on Tanner here, [mine looks even worse](https://github.com/thebearjew/thebearjew.github.io/commits/master?page=5)</small>
 
@@ -34,13 +34,13 @@ When using a submodule, we can `cd` into the directory and preform Git actions l
 ### Creating a blog posts submodule
 To start using a Git submodule with a Jekyll sit you first need to make a new Repository on Github and populate it with your posts.
 
-![](/Users/CASE/Pictures/blog-posts-submodule.png)
+![]({{ "blog-posts-submodule.png" | site.images_path }})
 
-The only requirement for this repository is that it follow the  [Jekyll post naming convetion](http://jekyllrb.com/docs/posts/): `YYYY-MM-DD-title-of-post.md` so it can be rendered properly once we add it as a submodule to the main site.
+The only requirement for this repository is that it follow the  [Jekyll post naming convetion](http://jekyllrb.com/docs/posts/): YYYY-MM-DD-title-of-post.md so it can be rendered properly once we add it as a submodule to the main site.
 
-> Make sure you’ve deleted the existing `_posts/` directory originally created by Jekyll.
+> Make sure you’ve deleted the existing _posts/ directory originally created by Jekyll.
 
-Lets add the blog-posts repository and simultaneously rename it to Jekyll’s native directory: `_posts`. 
+Lets add the blog-posts repository and simultaneously rename it to Jekyll’s native directory: _posts. 
 
 ```
 git add submodule https://github.com/thebearjew/blog-posts.git _posts
@@ -51,13 +51,13 @@ remote: Total 11 (delta 0), reused 11 (delta 0)
 Unpacking objects: 100% (11/11), done.
 Checking connectivity... done.
 ```
-<small>Note: `https` is required for submodules with Github Pages - [source](https://help.github.com/articles/using-submodules-with-pages/)</small>
+<small>Note: https is required for submodules with Github Pages - [source](https://help.github.com/articles/using-submodules-with-pages/)</small>
 
 This action does several things under the hood:
 
-1. Creates a `.gitmodules` file for Git to track and manage all submodules in the parent repository.
-2. Automatically changes the `:path` variable in `.gitmodules` to be the new path we specified -`_posts`
-3. Adds the submodule name and url to the `.git/config` file in the parent repository.
+1. Creates a .gitmodules file for Git to track and manage all submodules in the parent repository.
+2. Automatically changes the `:path` variable in .gitmodules to be the new path we specified - _posts
+3. Adds the submodule name and url to the .git/config file in the parent repository.
 
 Now we have to stage the newly added directory/submodule
 `git add _posts` - Important: **no trailing slash**
@@ -72,7 +72,7 @@ There’s one more thing - we need to tell git to automatically update our submo
 ### Pre-push Git hook
 By default, our newly added submodule will not be automatically pulled when new commits are added. Github Pages pulls any submodules only once when the page is initially built.
 
-A great solution is to use [Git Hooks](http://www.git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) which are Bash scripts executed at specific points along the Git workflow like `pre-commit`, `post-merge`, and `pre-push`.
+A great solution is to use [Git Hooks](http://www.git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) which are Bash scripts executed at specific points along the Git workflow like pre-commit, post-merge, and pre-push.
   
 For our purposes, it seems to make sense to pull our submodule right before we push. When the submodule is pulled, all new commits in the submodule are treated as **one change** in the parent directory.
 
@@ -86,12 +86,12 @@ Changes not staged for commit:
 This is great because we can make 10 commits to our blog-posts repository, and it will be seen as 1 commit in our parent directory (just “updating to the new HEAD for 
 
 
-To add the `pre-push` hook, navigate into Git’s hooks directory
+To add the pre-push hook, navigate into Git’s hooks directory
 `cd ./git/hooks` and create a new pre-push file `vim pre-push` and add the following lines 
 
 {% gist thebearjew/b2736e7394852ad3dd80 pre-push %}
 
-Now when we preform any `git push` to our site, our `_posts/` submodule gets updated - then look over the new updates to your posts and push the changes.
+Now when we preform any `git push` to our site, our _posts/ submodule gets updated - then look over the new updates to your posts and push the changes.
 
 ### Conclusion
 That's all there is to it! I hope you find the stand-alone blog-posts submodule useful and easier with your Jekyll site. Have any suggestions, improvement, or raving reviews? Let me know: [@jryio](https:/twitter.com/jryio)
