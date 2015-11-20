@@ -85,7 +85,7 @@ Changes not staged for commit:
   modified:   _posts (new commits)
 ```
 
-This is great because we can make 10 commits to our blog-posts repository, and it will be seen as 1 commit in our parent directory (just “updating to the new HEAD for 
+This is great because we can make 10 commits to our blog-posts repository, and it will be seen as 1 commit in our parent directory (just “updating to the new HEAD) 
 
 
 To add the pre-push hook, navigate into Git’s hooks directory
@@ -96,4 +96,6 @@ To add the pre-push hook, navigate into Git’s hooks directory
 Now when we preform any `git push` to our site, our _posts/ submodule gets updated - then look over the new updates to your posts and push the changes.
 
 ### Conclusion
-That's all there is to it! I hope you find the stand-alone blog-posts submodule useful and easier with your Jekyll site. Have any suggestions, improvement, or raving reviews? Let me know: [@jryio](https:/twitter.com/jryio)
+That's all there is to it! I hope you find the stand-alone blog-posts submodule useful and easier with your Jekyll site. 
+
+Got any suggestions for improvement or corrections? [Open an issue]({{ site.github.url | append: "/thebearjew.github.io/issues" }}) on this site's repository.
