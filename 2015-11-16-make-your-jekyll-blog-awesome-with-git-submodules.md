@@ -7,6 +7,8 @@ published: false
 
 More and more people are opting for [Static Site Engines](https://www.staticgen.com), like [Jekyll](), for their simplicity and functionality. Jekyll allows you to turn already great Markdown into fully functioning  web pages with Liquid Tempting, SASS, and Plugins. Who doesn’t love that?
 
+<!-- more -->
+
 One thing you shouldn’t love is a shitty commit history littered with posts, CSS/SASS updates, and layout modifications. About 80% of all developer sites built with Jekyll have a commit history which looks like this: 
 
 ![]({{ "jekyll-commits.png" | prepend: site.images_path }})
