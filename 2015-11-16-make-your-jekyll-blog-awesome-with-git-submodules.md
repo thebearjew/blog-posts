@@ -5,7 +5,9 @@ date: 2015-11-16 16:31:47
 published: false
 ---
 
-More and more people are opting for [Static Site Engines](https://www.staticgen.com), like [Jekyll](), for their simplicity and functionality. Jekyll allows you to turn already great Markdown into fully functioning  web pages with Liquid Tempting, SASS, and Plugins. Who doesn’t love that?
+More and more people are opting for [Static Site Engines](https://www.staticgen.com), like [Jekyll](), for their simplicity and functionality. Jekyll allows you to turn already great Markdown into fully functioning web pages with Liquid Tempting, SASS, and Plugins. Who doesn’t love that?
+
+<!-- more -->
 
 One thing you shouldn’t love is a shitty commit history littered with posts, CSS/SASS updates, and layout modifications. About 80% of all developer sites built with Jekyll have a commit history which looks like this: 
 
@@ -22,8 +24,8 @@ This is acceptable for most people because *who is the hell is going to look at 
 
 **Modularization**: If you’ve ever used Node.js you’ll know how awesome modules can make your life - heck any well-written library in any language makes developing a breeze. Why not take the same approach to your writing? Keeping your writing separate from your HTML/CSS allows you to “hot swap” the theme or structure of your Jekyll site any any time and doesn’t require checking out old commits to copy-paste old posts.
 
-###  The Git submodule
-Besides branches, commit histories, checkouts, and rebases - Git  allows for **repositories inside other repositories** called [Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules).
+### The Git submodule
+Besides branches, commit histories, checkouts, and rebases - Git allows for **repositories inside other repositories** called [Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 A submodule can be added to any repository with Git’s `submodule` command. When a submodule is added, git will clone the repository in your current repository and create a `.gitmodules` file to reference the submodule going forward.
 
