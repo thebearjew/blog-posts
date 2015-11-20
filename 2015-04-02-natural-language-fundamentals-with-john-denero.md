@@ -4,10 +4,8 @@ title: Natural Language Processing Fundamentals with Prof. John DeNero
 date: 2015-04-06 16:10:14
 published: true
 ---
-
-![The Talk]({{ "nlp-denero-1.jpg" | prepend: site.images_path }})
-
 All of us have done something like this: *Google Translate* > *"Hello"* > *Translate to Dutch* > *Paste*, but give little thought to what process is doing all of the work.
+
 <!-- more -->
 
 Many of our initial assumptions about Human-Computer Interactions are naive. A young child might explain this process as "*someone must have entered the dictionary into a computer and that's how we get translations*". While true, there are far more steps required in order to accurate decompose then interpret sentences.
@@ -16,6 +14,7 @@ This is exactly what Professor John DeNero talked about at Berkeley's Cloyne CO-
 
 I decided to attend this event after a Facebook invitation from [Hackers@Berkeley](http://hackersatberkeley.com). I had no idea that DeNero had such a proficient background in the subject until right before the event. I found out that before his current position, Professor DeNero was a [researcher](http://research.google.com/pubs/author38952.html) at Google. He worked specifically on [Google Translate](https://translate.google.com) and Natural Language Processing.
 
+![The Talk]({{ "nlp-denero-1.jpg" | prepend: site.images_path }})
 
 ### Natural Language Processing
 
