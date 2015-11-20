@@ -2,7 +2,7 @@
 layout: post
 title: Make your Jekyll Blog Awesome with Git Submodules
 date: 2015-11-16 16:31:47
-published: true
+published: false
 ---
 
 More and more people are opting for [Static Site Engines](https://www.staticgen.com), like [Jekyll](), for their simplicity and functionality. Jekyll allows you to turn already great Markdown into fully functioning  web pages with Liquid Tempting, SASS, and Plugins. Who doesn’t love that?
