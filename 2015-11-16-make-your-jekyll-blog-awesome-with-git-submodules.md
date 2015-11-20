@@ -2,7 +2,7 @@
 layout: post
 title: Make your Jekyll Blog Awesome with Git Submodules
 date: 2015-11-16 16:31:47
-published: false
+published: true
 ---
 
 More and more people are opting for [Static Site Engines](https://www.staticgen.com), like [Jekyll](), for their simplicity and functionality. Jekyll allows you to turn already great Markdown into fully functioning  web pages with Liquid Tempting, SASS, and Plugins. Who doesn’t love that?
@@ -19,12 +19,14 @@ This is acceptable for most people because *who is the hell is going to look at 
 
 ### Why it's awesome
 
-**Modularization**: Having modular code part of programming "best-practices". The first introduction most starting developers have in the old
+**Modularization**: Having modular code part of programming "best-practices". The first introduction most starting developers have is the old...
 
 > Don't put all of your code in one function dammit!
 
 
-If you’ve ever used Node.js you’ll know how awesome modules can make your life - heck any well-written library in any language makes developing a breeze. Why not take the same approach to your writing? Keeping your writing separate from your HTML/CSS allows you to “hot swap” the theme or structure of your Jekyll site any any time and doesn’t require checking out old commits to copy-paste old posts.
+If you’ve ever used Node.js you’ll know how awesome modules can make your life - heck any well-written library in any language makes developing a breeze. 
+
+Why not take the same approach to your writing and blog? Keeping your writing separate from your HTML/CSS allows you to “hot swap” the theme or structure of your Jekyll site any any time and doesn’t require checking out old commits to copy-paste old posts.
 
 ###  The Git submodule
 Besides branches, commit histories, checkouts, and rebases - Git  allows for **repositories inside other repositories** called [Submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules).
