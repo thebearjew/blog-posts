@@ -1,6 +1,11 @@
-## How to open links in a new tab when using Jekyll Redcarpet Markdown
+---
+layout: post
+title: Open External Links in New Tab - Jekyll Redcarpet
+date: 2015-12-01 21:26:34
+published: true
+---
 
-If you're creating a personal site or blog, you'll probably want your reader to finish your post even when you've linked away to something else on the internet.
+If you're creating a personal site or blog, you'll probably want your reader to finish your post; even when you're linkning to another site for reference. For your reader, opening a link to another site in a new tab is the best solution, and should be on by default. Here's a quick explaination & solution for your Jekyll site.
 
 Enabling this feature within a Jekyll rendered site or blog comes down to the [Markdown renderer](http://jekyllrb.com/docs/configuration/#markdown-options) you deploy.
 
@@ -32,8 +37,8 @@ First, let's write a self-executing function which will immediate call itself wh
 ```js
 // This function is called immediately
 (function () {
-	// Separate our code in case we need to do other things
-	handleLinks()
+  // Separate our code in case we need to do other things
+  handleLinks()
 })()
 
 function handleLinks () {
@@ -46,14 +51,14 @@ We don't want to open links to our own site in a new tab. This is why we utilize
 
 ```js
 function handleLinks () {
-	var host = location.hostname // 'www.jry.io'
-	var allLinks = document.querySelectorAll('a') // NodeList of all <a> elements
-	for (var i = 0; i < allLinks.length; ++i) {
-		// links that are not from our owns site and are not empty
-		if (allLinks[i].hostname !== host && allLinks[i].hostname !== '') {
-			allLinks[i].target = '_blank'
-		}
-	}
+  var host = location.hostname // 'www.jry.io'
+  var allLinks = document.querySelectorAll('a') // NodeList of all <a> elements
+  for (var i = 0; i < allLinks.length; ++i) {
+    // links that are not from our owns site and are not empty
+    if (allLinks[i].hostname !== host && allLinks[i].hostname !== '') {
+      allLinks[i].target = '_blank'
+    }
+  }
 }
 ```
 
@@ -80,10 +85,4 @@ For your convenience [I've created a Gist]() of my implementation which uses Reg
 
 That's a wrap! You're now setting all links which direct away from your own site to open in a new tab/window using `target="_blank"`. 
 
-
-
-
-
-
-
-
+[^1]: Hey there's that footnote from earlier! check out [](https://reddit.com/r/dailyprogrammer) because its pretty awesome.
