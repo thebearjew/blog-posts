@@ -21,7 +21,7 @@ href="http://http.cat">http.cat</a>`
 However, many Jekyll users are implementing Redcarpet, which provides an abundance of customizations 
 and extensions to make specific Markdown behaviors.
 
-The [full list]() includes code fencing, ~~strikethrough~~, _underlining_, and footnotes[^1]. These 
+The [full list](https://github.com/vmg/redcarpet#and-its-like-really-simple-to-use) includes code fencing, ~~strikethrough~~, _underlining_, and footnotes[^1]. These 
 are the features you see and expect around [reddit](https://reddit.com), [Stack Overflow](http://
 stackoverflow.com), etc.
 
@@ -93,7 +93,7 @@ function forEach (nl, callback, scope) {
 }
 ```
 
-For your convenience [I've created a Gist]() of my implementation which uses RegEx to grab the 
+For your convenience [I've created a Gist](https://gist.github.com/thebearjew/4ad55d2030f488df8e12) of my implementation which uses RegEx to grab the 
 "hostname" (it's a little excessive but does the same job).
 
 That's a wrap! You're now setting all links which direct away from your own site to open in a new tab
