@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open External Links in New Tab - Jekyll Redcarpet
+title: Using JavaScript to Open External Links in New Tab  - Jekyll/Redcarpet
 date: 2015-12-01 21:26:34
 published: true
 ---
