@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Using JavaScript to Open External Links in New Tabs  - Jekyll/Redcarpet
-date: 2015-12-01 21:26:34
+date: 2015-12-14 08:09:25
 published: true
 ---
 
-If you're creating a personal site or blog, you'll probably want your reader to finish your post; even when you're linkning to another site for reference. For your reader, opening a link to another site in a new tab is the best solution, and should be on by default. Here's a quick explaination & solution for your Jekyll site.
+If you're creating a personal site or blog, you'll probably want your reader to finish your post; even when you're linking to another site for reference. For your reader, opening a link to another site in a new tab is the best solution, and should be on by default. Here's a quick explaination & solution for your Jekyll site.
 
 Enabling this feature within a Jekyll rendered site or blog comes down to the [Markdown renderer](http://jekyllrb.com/docs/configuration/#markdown-options) you deploy.
 
@@ -99,5 +99,4 @@ For your convenience [I've created a Gist](https://gist.github.com/thebearjew/4a
 That's a wrap! You're now setting all links which direct away from your own site to open in a new tab
 /window using `target="_blank"`. 
 
-[^1]: Hey there's that footnote from earlier! check out [](https://reddit.com/r/dailyprogrammer) 
-because its pretty awesome.
+[^1]: Hey there's that footnote from earlier! check out [/r/dailyprogrammer](https://reddit.com/r/dailyprogrammer) because its pretty awesome.
