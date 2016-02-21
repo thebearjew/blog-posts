@@ -47,7 +47,7 @@ Make sure you’ve deleted the existing _posts/ directory originally created by 
 Lets add the blog-posts repository and simultaneously rename it to Jekyll’s native directory: _posts. 
 
 ```
-git add submodule https://github.com/thebearjew/blog-posts.git _posts
+git submodule add https://github.com/thebearjew/blog-posts.git _posts
 Cloning into ‘_posts’…
 remote: Counting objects: 11, done.
 remote: Compressing objects: 100% (10/10), done.
